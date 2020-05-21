@@ -1,0 +1,293 @@
+/* Noto Sans KR Font 사용 */
+/* 구글 웹폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;900&display=swap');
+body {
+    font-family: 'Gotham', 'Noto Sans KR', sans-serif;
+}
+p {
+    font-family: 'Gotham', 'Noto Sans KR', sans-serif;
+}
+/* Gotham Font 사용 */
+/* https://github.com/ApplicationCraft/applicationcraft.com/tree/master/source/fonts */
+@font-face {
+    font-family: "Gotham";
+    src: font-url("https://github.com/ApplicationCraft/applicationcraft.com/blob/master/source/fonts/gotham-book-webfont.eot");
+    src: font-url("https://github.com/ApplicationCraft/applicationcraft.com/blob/master/source/fonts/gotham-book-webfont.eot?#iefix") format("embedded-opentype"),
+         font-url("https://github.com/ApplicationCraft/applicationcraft.com/blob/master/source/fonts/gotham-book-webfont.woff") format("woff"),
+         font-url("https://github.com/ApplicationCraft/applicationcraft.com/blob/master/source/fonts/gotham-book-webfont.ttf") format("truetype"),
+         font-url("https://github.com/ApplicationCraft/applicationcraft.com/blob/master/source/fonts/gotham-book-webfont.svg") format("svg");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gotham";
+    src: font-url("https://github.com/ApplicationCraft/applicationcraft.com/blob/master/source/fonts/gotham-light-webfont.eot");
+    src: font-url("https://github.com/ApplicationCraft/applicationcraft.com/blob/master/source/fonts/gotham-light-webfont.eot#iefix") format("embedded-opentype"),
+         font-url("https://github.com/ApplicationCraft/applicationcraft.com/blob/master/source/fonts/gotham-book-webfont.woff") format("woff"),
+         font-url("https://github.com/ApplicationCraft/applicationcraft.com/blob/master/source/fonts/gotham-light-webfont.ttf") format("truetype"),
+         font-url("https://github.com/ApplicationCraft/applicationcraft.com/blob/master/source/fonts/gotham-light-webfont.svg") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gotham";
+    src: font-url("https://github.com/ApplicationCraft/applicationcraft.com/blob/master/source/fonts/gotham-medium-webfont.eot");
+    src: font-url("https://github.com/ApplicationCraft/applicationcraft.com/blob/master/source/fonts/gotham-medium-webfont.eot#iefix") format("embedded-opentype"),
+         font-url("https://github.com/ApplicationCraft/applicationcraft.com/blob/master/source/fonts/gotham-medium-webfont.woff") format("woff"),
+         font-url("https://github.com/ApplicationCraft/applicationcraft.com/blob/master/source/fonts/gotham-thin-webfont.ttf") format("truetype"),
+         font-url("https://github.com/ApplicationCraft/applicationcraft.com/blob/master/source/fonts/gotham-medium-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+.gotham {
+    font-family: "Gotham";
+}
+.gotham.medium {
+    font-weight: normal;
+}
+.gotham.book {
+    font-weight: 900;
+}
+.gotham.light {
+    font-weight: 300;
+}
+/* 전역 */
+a {text-decoration: none; color: #fff;}
+
+/* Main Page CSS */
+* {
+    margin: 0; 
+    padding: 0;
+}
+body {
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    background: #fff;
+}
+#mainpage {
+    width: 100%; 
+    margin: 0 auto;
+}
+header {
+    width: 100%; 
+    height: 150px; 
+    background: #ffdbdf;
+}
+nav {
+    width: 100%; 
+    height: 350px; 
+    background: linear-gradient(to bottom, #ffdbdf 30%, #fff 70%)
+}
+section {
+    width: 100%; 
+    height: 7600px; 
+    /* background-color: #d4e157; */
+}
+section.poster {
+    height: 850px;
+    padding-top: -800px;
+}
+footer {
+    clear: both; 
+    width: 100%; 
+    height: 150px; 
+    background-color: #303030;
+}
+
+/* section */
+#intro {
+    text-align: center; 
+    margin-top: 300px; 
+    margin-bottom: 300px;
+}
+h2 {
+    list-style-type : none; 
+    font-size: 50px; 
+    font-weight: 900; 
+    letter-spacing: -1px; 
+    color: #303030;
+    text-shadow: 2px 2px 8px #c1c1c1;
+}
+
+/* Contents 메뉴 */
+
+#originalId {
+    margin: 0 3% 200px 3%;
+}
+.originalfloat {
+    float: left; 
+    padding-right: 200px; 
+    padding-bottom: 300px;
+}
+.originaltext {
+    font-size: 20px; 
+    color: #303030;
+}
+
+#content1 {
+    width: 100%; 
+    height: 1080px; 
+    background-image: url("../img/boa.png");
+    background-repeat: repeat-x; 
+    background-position: bottom center;
+}
+#content2 {
+    width: 100%; 
+    height: 1080px; 
+    background-image: url("../img/tvxq.jpg");
+    background-repeat: repeat-x; 
+    background-position: bottom center;
+}
+#content3 {
+    width: 100%; 
+    height: 1080px; 
+    background-image: url("../img/rv.jpg");
+    background-repeat: repeat-x; 
+    background-position: bottom center;
+}
+#content4 {
+    width: 100%; 
+    height: 1080px; 
+    background-image: url("../img/exo.jpg");
+    background-repeat: repeat-x; 
+    background-position: bottom center;
+}
+#content5 {
+    width: 100%; 
+    height: 1080px; 
+    margin-bottom: -500px;
+    background-image: url("../img/ggl.png");
+    background-repeat: repeat-x; 
+    background-position: bottom center;
+}
+
+/* Contents - 포스터 나열 */
+
+h3 {
+	margin: -400px 3% 0 3%;
+	padding: 0;
+    font-size: 30px;
+    color: #303030;
+    text-shadow: 2px 2px 8px #e1e1e1;
+}
+.column {
+	margin: 30px 3% 0 3%;
+	padding: 0;
+}
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column div {
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 283px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.column div:first-child {
+	margin-left: 0;
+}
+.column div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 200px;
+	margin: 0;
+	padding: 0;
+	color: #303030;
+    font-size: 18px;
+    font-weight: 300;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+	width: 200px;
+	height: 283px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px #c1c1c1;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+/* 포스터 줌인 */
+
+.hover figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+.hover figure:hover img {
+	-webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/* BG IMG */
+.bgimg {
+    margin-top: 300px;
+    width: 100%;
+    height: 1510px;
+    background-image: url(../img/contentsbg.png);
+}
+.bgtext {
+    color: #303030;
+    text-align: center;
+    padding: 650px 15% 0 15%;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px #c1c1c1;
+}
+
+#bg_img {
+    width: 100%; 
+    height: 725px; 
+    text-align: center; 
+    font-size: 30px;
+    background-image: url("../img/smtownbg.png");
+    background-repeat: no-repeat; 
+    background-position: bottom center;
+}
+
+/* footer */
+#footer_box {
+    width: 100%; 
+    height: 150px; 
+    margin: 0 0 0 15%;
+}
+#footer_logo {
+    float: left; 
+    margin: 50px 0 0 30px;
+}
+#info {
+    text-align: right; 
+    float: right; 
+    margin: 75px 30% 0 0; 
+    color: white; 
+    list-style-type: none;
+}
+
+/* Top Menu */ 
+#logo {
+    float: left; 
+    margin: 50px 0 0 15%;
+}
+#menu {
+    margin: 75px 15% 0 0; 
+    text-align: right; 
+    float: right; 
+}
+#menu li {
+    display: inline; 
+    margin-left: 80px;
+}

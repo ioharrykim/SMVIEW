@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="./css/sign.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가입하기 - SMVIEW</title>
+</head>
+<body>
+    <div id="mainpage">
+        <header>
+            <div id="logo">
+                <a href="./index.html"><img src="./img/logo_w.png" alt="SMVIEW LOGO"></a>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li class="gotham"><a href="./about.html" onmouseover="this.style.color='#303030' " onmouseout="this.style.color='#fff';"><span style="font-size: 20px;">About</span></a></li>
+                    <li class="gotham"><a href="./contents.html" onmouseover="this.style.color='#303030' " onmouseout="this.style.color='#fff';"><span style="font-size: 20px;">Contents</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+           <div class="bgimg">
+            <h2 id="intro">
+                멤버쉽 정보 입력
+            </h2>
+            <div class="price">
+                SMVIEW에 지금 바로 가입할 수 있습니다.
+            </div>
+            <div id="sign">
+                <form id="sign-in">
+                    <fieldset class="form-fields">
+                        <legend>
+                            정보 입력
+                        </legend>
+                        <div class="form-line">
+                            <div class="form-title"><label for="user_id">ID</label></div>
+                            <div class="form-input"><input id="user_id" type="text" name="user_id" placeholder="ID를 입력해주세요."/></div>
+                            <div class="form-button"><button onclick="alert('사용가능한 ID 입니다.');" style="cursor:pointer;">중복확인</button></div>
+                        </div>
+                        <div class="form-line">
+                            <div class="form-title"><label for="user_pass">비밀번호</label></div>
+                            <div class="form-input"><input id="user_pass" type="password" name="user_pass" placeholder="비밀번호를 입력해주세요." value=""/></div>
+                        </div>
+                        <div class="form-line">
+                            <div class="form-title"><label for="user_name">닉네임</label></div>
+                            <div class="form-input"><input id="user_name" type="text" name="user_name" placeholder="사용하실 닉네임을 입력해주세요."/></div>
+                        </div>
+                        <div class="form-line">
+                            <div class="form-title"><label for="user_membership_standard">멤버쉽</label></div>
+                            <div class="form-input">
+                                <input class="sRadio" id="user_membership_standard" type="radio" name="user_membership"><label for="user_membership_standard">STANDARD</label><br>
+                                <input class="sRadio" id="user_membership_premium" type="radio" name="user_membership"><label for="user_membership_premium">PREMIUM</label><br>
+                                <input class="sRadio" id="user_membership_ultra" type="radio" name="user_membership"><label for="user_membership_ultra">ULTRA</label><br>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-ok">
+                        <button type= "button" onclick="location.href='./about.html'" style="cursor:pointer;">가입하기</button>
+                    </div>
+                </form>
+            </div>
+           </div>
+        </section>
+        <footer>
+            <div id="footer_box">
+              <div id="footer_logo">
+                <img src="./img/footer_logo.png" alt="">
+              </div>
+              <ul id="info">
+                <li><a href="https://www.facebook.com/smtown" target="_blank"><img src="./img/icon_fb.png" alt="SMTOWN FACEBOOK"></a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/SMTOWNGLOBAL" target="_blank"><img src="./img/icon_twitter.png" alt="SMTOWN TWITTER"></a>&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCEf_Bc-KVd7onSeifS3py9g" target="_blank"><img src="./img/icon_youtube.png" alt="SMTOWN YOUTUBE"></a></li>
+                <li>Copyrightⓒ2019-2020 KIM HYUNMIN All rights reserved.</li>
+              </ul>
+            </div>
+          </footer>
+    </div>
+</body>
+</html>
