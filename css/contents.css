@@ -63,6 +63,7 @@ body {
     overflow-x: hidden; 
     overflow-y: auto; 
     background: #fff;
+    font-size: 18px;
 }
 #mainpage {
     width: 100%; 
@@ -108,6 +109,10 @@ h2 {
     color: #303030;
     text-shadow: 2px 2px 8px #c1c1c1;
 }
+.intro-wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
 
 /* Contents 메뉴 */
 
@@ -120,7 +125,7 @@ h2 {
     padding-bottom: 300px;
 }
 .originaltext {
-    font-size: 20px; 
+    font-size: 1rem; 
     color: #303030;
 }
 
@@ -198,7 +203,7 @@ h3 {
 	margin: 0;
 	padding: 0;
 	color: #303030;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 300;
 	text-decoration: none;
 	text-align: center;
@@ -245,16 +250,7 @@ figure:hover+span {
     color: #303030;
     text-align: center;
     padding: 650px 15% 0 15%;
-    font-size: 20px;
-    text-shadow: 2px 2px 8px #c1c1c1;
-}
-
-.bgtext2 {
-    color: #303030;
-    text-align: center;
-    padding: 500px 15% 0 15%;
-    font-size: 24px;
-    font-weight: 900;
+    font-size: 1rem;
     text-shadow: 2px 2px 8px #c1c1c1;
 }
 

@@ -53,7 +53,6 @@ p {
 }
 /* 전역 */
 a {text-decoration: none; color: #fff;}
-a.bgtext {color: #303030}
 
 /* Main Page CSS */
 * {
@@ -64,6 +63,14 @@ body {
     overflow-x: hidden; 
     overflow-y: auto; 
     background: #fff;
+    font-size: 18px;
+}
+p {
+    width: 900px;
+    margin: 0 auto;
+}
+p:first-child {
+    width: 1000px;
 }
 #mainpage {
     width: 100%; 
@@ -79,11 +86,7 @@ nav {
     height: 350px; 
     background: linear-gradient(to bottom, #ffdbdf 30%, #fff 70%)
 }
-section {
-    width: 100%; 
-    height: 8450px; 
-    /* background-color: #d4e157; */
-}
+
 section.poster {
     height: 850px;
 }
@@ -119,6 +122,10 @@ h3 {
     letter-spacing: -1px;
     color: #303030;
 }
+.about-container {
+    width: 1200px;
+    margin: 0 auto;
+}
 
 /* Contents 메뉴 */
 
@@ -127,11 +134,11 @@ h3 {
 }
 .originalfloat {
     float: left; 
-    padding-right: 200px; 
+    padding-right: 60px; 
     padding-bottom: 300px;
 }
 .originaltext {
-    font-size: 20px; 
+    font-size: 1rem; 
     color: #303030;
 }
 
@@ -144,48 +151,43 @@ h3 {
 }
 
 #project {
-    margin: 0 15% 0 15%;
     text-align: center;
 }
 #definition {
     padding-top: 300px;
-    margin: 0 15% 0 15%;
     text-align: center;
 }
 #originalContents {
     padding-top: 300px;
-    margin: 0 15% 0 15%;
     text-align: center;
 }
 #prototype {
-    padding-top: 550px;
-    margin: 0 15% 0 15%;
+    padding-top: 300px;
     text-align: center;
 }
 #wrapup {
     padding-top: 300px;
-    margin: 0 15% 0 15%;
     text-align: center;
 }
 p.intro {
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 300;
     color: #303030;
 }
 p.defin {
     letter-spacing: 3px;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: bold;
     text-align: left;
     color: #4a4a4a;
-    padding: 150px 0 50px 15%;
+    padding: 150px 0 50px 0;
 }
 p.comment {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1rem;
     text-align: left;
-    padding: 100px 15% 0 15%;
+    padding: 100px 0 0 0;
     color: #303030;
 }
 .youtube {
@@ -195,8 +197,10 @@ p.comment {
 
 /* LIVE POSTER */
 .liveposter {
+    display: flex;
     padding: 150px 0 0 0;
     text-align: center;
+    justify-content: center;
 }
 figure {
     float: left;
@@ -231,16 +235,8 @@ figure {
     background-image: url("../img/smtownbg.png");
     background-repeat: no-repeat; 
     background-position: bottom center;
+    background-size: cover;
 }
-.bgtext {
-    color: #303030;
-    text-align: center;
-    padding: 150px 15% 0 15%;
-    font-size: 24px;
-    font-weight: 900;
-    text-shadow: 2px 2px 8px #c1c1c1;
-}
-
 
 /* footer */
 #footer_box {
